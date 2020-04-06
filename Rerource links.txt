@@ -1,0 +1,8 @@
+https://loadimpact.com/website-testing
+https://stackoverflow.com/questions/9750509/load-vs-stress-testing
+https://prateekvjoshi.com/2013/08/21/why-do-we-need-performance-testing/
+https://geteasyqa.com/blog/best-tools-load-testing/
+https://www.devcurry.com/2010/07/10-free-tools-to-loadstress-test-your.html
+https://www.guru99.com/web-application-testing.html
+https://www.guru99.com/load-testing-tutorial.html
+https://www.guru99.com/stress-testing-tutorial.html
