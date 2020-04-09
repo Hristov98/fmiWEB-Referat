@@ -9,30 +9,31 @@
         <div class="tableOfContents">
                 <p>Съдържание</p>
                 <ol>
-                <li>Основни понятия</li>
+                    
+                <li><a href="#anchor-terminology">Основни понятия</a></li>
                 <ol type="a">
-                   <li>Тестване на товар (Load Testing)</li>
-                   <li>Стрес тестване (Stress Testing)</li>
+                   <li><a href="#anchor-terminology-a">Тестване на товар (Load Testing)</a></li>
+                   <li><a href="#anchor-terminology-b">Стрес тестване (Stress Testing)</a></li>
                 </ol>
-                <li>Apache JMeter</li>
-                <li>Locust</li>
-                <li>Gatling</li>
-                <li>NeoLoad</li>
-                <li>WebLOAD</li>
-                <li>Rational Performance Tester</li>
-                <li>Silk Performer</li>
-                <li>LoadRunner Cloud</li>
-                <li>WAPT</li>
-                <li>Цитирана литература</li>
-                <li>Списък с фигури</li>
+                <li><a href="#anchor-jmeter">Apache JMeter</a></li>
+                <li><a href="#anchor-locust">Locust</a></li>
+                <li><a href="#anchor-gatling">Gatling</a></li>
+                <li><a href="#anchor-neoload">NeoLoad</a></li>
+                <li><a href="#anchor-webload">WebLOAD</a></li>
+                <li><a href="#anchor-rpt">Rational Performance Tester</a></li>
+                <li><a href="#anchor-silk">Silk Performer</a></li>
+                <li><a href="#anchor-loadrunner">LoadRunner Cloud</a></li>
+                <li><a href="#anchor-wapt">WAPT</a></li>
+                <li><a href="#anchor-citations">Цитирана литература</a></li>
+                <li><a href="#anchor-figures">Списък с фигури</a></li>
              </ol>
         </div>
         
         <div class="content">
             <h1>Инструменти за стрес-тестове на уеб приложения</h1>
 
-            <div class="heading">Основни понятия</div>
-            <div class="subheading">Тестване на товар (Load Testing)</div>
+            <div class="heading" id="anchor-terminology">Основни понятия</div>
+            <div class="subheading" id="anchor-terminology-a">Тестване на товар (Load Testing)</div>
             <p>
                 Тестването на товар е вид нефункционално тестване и е под-множество на тестването на производителност. При този вид 
                 тестване се изчислява производителността на едно уеб приложение когато конкретен брой потребители го използват 
@@ -49,10 +50,10 @@
                 <li> Връзката между клиент и сървър</li>
                 <li> Дизайна на софтуера</li>
                 <li>Конфигурация на сървъра</li>
-                <li> Ограниченията на хардуера [1]</li>
+                <li> Ограниченията на хардуера <a href="#anchor-figures">[1]</a></li>
             </ul>
 
-            <div class="subheading">Стрес тестване (Stress Testing)</div>  
+            <div class="subheading" id="anchor-terminology-b">Стрес тестване (Stress Testing)</div>  
             <p> 
                 Подобно на тестването на товар, стрес тестването също проверява поведението на уеб приложение при определен товар. Това, 
                 което ги разграничава е, че докато тестването на товар набляга върху производителността на една система, стрес тестването 
@@ -70,17 +71,18 @@
                 <li>То проверява до каква степен работи система при голяма натовареност</li>
                 <li>То проверява дали правилно се представят съобщенията за грешки при голяма натовареност</li>
                 <li>Срив на системата при критични ситуации ще доведе до значителни финансови загуби</li>
-                <li>То подобрява като цяло колко подготвена е една система да справи с огромни натоварености [2]</li>
+                <li>То подобрява като цяло колко подготвена е една система да справи с огромни натоварености 
+                    <a href="#anchor-figures">[2]</a></li>
             </ul>
 
-            <div class="heading">Apache JMeter</div>
+            <div class="heading" id="anchor-jmeter">Apache JMeter</div>
             <img src="img/jmeter-01.png" alt="JMeter logo">
             <p>
                 Apache JMeter е инструмент за стрес тестване с отворен код, разработено изцяло на Java. То е създадено за тестване на 
                 натовареността на функционалностите и изчисляване на производителност. Приложението позволява тестване на 
                 производителността на както статични, така и динамични ресурси. Може да симулира натовареност върху обект, сървър, 
                 група от сървъри или мрежа. Така то изследва тяхната издържливост и ефективност при различни степени на натовареност. 
-                [3]
+                <a href="#anchor-figures">[3]</a>
             </p>
             <img src="img/jmeter-02.png" alt="JMeter image 2">
             <p>
@@ -92,7 +94,7 @@
                 <li>Тези отговори се събират и визуализират под формата на диаграма</li>
                 <li>JMeter обработва информацията, получена от сървъра</li>
                 <li>JMeter генерира тестов резултат в различни формати (текст, XML, JSON)</li>
-                <li>Тестерът анализира получения резултат [4]</li>
+                <li>Тестерът анализира получения резултат <a href="#anchor-figures">[4]</a> </li>
             </ol>
             <img src="img/jmeter-03.png" alt="JMeter image 3">
             <p>
@@ -128,7 +130,7 @@
                 AJAX, което може да доведе то неточности при симулацията.
             </ol>
 
-            <div class="heading">Locust</div>
+            <div class="heading"  id="anchor-locust" >Locust</div>
             <img src="img/locust-01.jpg" alt="Locust logo">
             <p>
                 Locust е инструмент за стрес тестване с отворен код. Той е предназначен за тестване на уеб сайтове и изчисляване на колко 
@@ -141,7 +143,8 @@
                 потребителя на една машина. За разлика от други приложения, които използват събития, Locust не използва callback функции. 
                 Вместо тях използва леки процеси, реализирани чрез gevent, библиотека на Python за доставяне на синхронизационни приложен 
                 програмен интерфейс на високо ниво. Всеки отделен „скакалец“ се изпълнява в собствен процес, което позволява силна 
-                гъвкавост при писането на тестове с Python без да се усложнява кода чрез прилагане на callback функции. [5]
+                гъвкавост при писането на тестове с Python без да се усложнява кода чрез прилагане на callback функции. 
+                <a href="#anchor-figures">[5]</a>
             </p>
             <p>
                 Предимства и функционалности на Locust:
@@ -173,7 +176,7 @@
                 Инструментът няма да поиска URL адрес без изрично да се зададе да го търси
             </ol>
 
-            <div class="heading">Gatling</div>
+            <div class="heading" id="anchor-gatling">Gatling</div>
             <img src="img/gatling-01.png" alt="Gatling logo">
             <p>
                 Gatling е инструмент за стрес-тестване, базиран на Scala. Предлага се версия с отворен код, Gatling, както и лицензирана 
@@ -213,11 +216,11 @@
                 <li>Не позволява да се разпределя товара между различни машини</li>
                 <li>
                     Приложният програмен интерфейс се е променил коренно. Това би довело до проблеми на изпълнение на тестови сценарии, 
-                    написани на стари версии. [3]
+                    написани на стари версии. <a href="#anchor-figures">[3]</a>
                 </li>
             </ol>
 
-            <div class="heading">NeoLoad</div>
+            <div class="heading" id="anchor-neoload">NeoLoad</div>
             <img src="img/neoload-01.png" alt="NeoLoad logo">
             <p>
                 NeoLoad е инструмент за стрес тестване, написан на Java. Ефективен е при тестване както на уеб сайтове, така и на мобилни и 
@@ -243,10 +246,10 @@
             <ol>
                 <li>Не се поддържа на Mac OSX</li>
                 <li>Не може да достъпи DOM дървото на уеб страницата</li>
-                <li>Липсва опция за запис на времето за отговор на заявка [3]</li>
+                <li>Липсва опция за запис на времето за отговор на заявка <a href="#anchor-figures">[3]</a></li>
             </ol>
 
-            <div class="heading">WebLOAD</div>
+            <div class="heading" id="anchor-webload">WebLOAD</div>
             <img src="img/webload-01.png" alt="WebLOAD logo">
             <p>
                 WebLOAD е инструмент за стрес тестване и анализи, произведено от RadView Software. Това е мощен инструмент за тестване на
@@ -272,10 +275,10 @@
             <ol>
                 <li>Не поддържа Citrix</li>
                 <li>Не поддържа SAP GUI</li>
-                <li>Нужни се известни технически знания, за да се използва инструмента [3]</li>
+                <li>Нужни се известни технически знания, за да се използва инструмента <a href="#anchor-figures">[3]</a></li>
             </ol>
 
-            <div class="heading">Rational Performance Tester</div>
+            <div class="heading" id="anchor-rpt">Rational Performance Tester</div>
             <img src="img/rpt-01.png" alt="RPT logo">
             <p>
                 Rational Performance Tester (RPT) е инструмент за тестване на производителност, разработен от IBM. Може да се използва за
@@ -298,10 +301,10 @@
             </p>
             <ol>
                 <li>Не поддържа приложения, базирани на Java Applet</li>
-                <li>Не позволява динамично променяне на използваните ресурси [3]</li>
+                <li>Не позволява динамично променяне на използваните ресурси <a href="#anchor-figures">[3]</a></li>
             </ol>
 
-            <div class="heading">Silk Performer</div>
+            <div class="heading" id="anchor-silk">Silk Performer</div>
             <img src="img/silkperformer-01.png" alt="Silk Performer logo">
             <p>
                 Silk Performer е инструмент за стрес тестване, разработен от Micro Focus. Използва се за тестване на уеб, мобилни и 
@@ -332,13 +335,13 @@
                 <li>Стрес тестването консумира голямо количество памет</li>
             </ol>
 
-            <div class="heading">LoadRunner Cloud</div>
+            <div class="heading" id="anchor-loadrunner">LoadRunner Cloud</div>
 
             <img src="img/loadrunner-cloud-01.png" alt="LoadRunner logo">
             <p>
                 LoadRunner Cloud (познат също като StormRunner Load) е облачно-базиран инструмент за тестване на производителност, 
                 разработен от Hewlett Packard Enterprise. Той е напълно платен софтуер и се предлага като услуга. Той е подходящ за уеб и 
-                мобилни системи, които прилагат DevOps, гъвкави методологии и модела на водопада. [6]
+                мобилни системи, които прилагат DevOps, гъвкави методологии и модела на водопада. <a href="#anchor-figures">[6]</a>
             </p>
             <p>
                 Предимства и функционалности на LoadRunner Cloud:
@@ -362,10 +365,10 @@
                 <li>Не поддържа FTP</li>
                 <li>Няма опция за мрежов анализ чрез Jmeter скрипт</li>
                 <li>Няма опция за създаване на график за тестване</li>
-                <li>Позволява да се прикачват единствено скриптове [3]</li>
+                <li>Позволява да се прикачват единствено скриптове <a href="#anchor-figures">[3]</a></li>
             </ol>
 
-            <div class="heading">WAPT</div>
+            <div class="heading" id="anchor-wapt">WAPT</div>
 
             <img src="img/wapt-01.png" alt="WAPT logo">
             <p>
@@ -374,12 +377,14 @@
                 мобилни приложения, ERP и CRM системи, IOT платформи и мрежови API услуги. Инструментът се предлага по три начина:
             </p>
             <ul>
-                <li>WAPT - Базова версия с годишен лиценз, която допуска тестване с до 2000 паралелни потребителя [7]</li>
+                <li>WAPT - Базова версия с годишен лиценз, която допуска тестване с до 2000 паралелни потребителя 
+                    <a href="#anchor-figures">[7]</a></li>
                 <li>
                     WAPT Pro - Разширена версия с годишен лиценз, която има допълнителни функционалности и допуска тестване с до един 
-                    милион паралелни потребителя [8]
+                    милион паралелни потребителя <a href="#anchor-figures">[8]</a>
                 </li>
-                <li>WAPT Cloud - Облачна услуга, която се заплаща на час в зависимост от размера на провежданите тестове [9]</li>
+                <li>WAPT Cloud - Облачна услуга, която се заплаща на час в зависимост от размера на провежданите тестове 
+                    <a href="#anchor-figures">[9]</a></li>
             </ul>
             <p>
                 Предимства и функционалности на WAPT:
@@ -398,10 +403,10 @@
             </p>
             <ol>
                 <li>Може да се инсталира единствено на Windows OS</li>
-                <li>Няма опция за писане на скриптове [3]</li>
+                <li>Няма опция за писане на скриптове <a href="#anchor-figures">[3]</a></li>
             </ol>
 
-            <div class="heading">Цитирана литература</div>
+            <div class="heading" id="anchor-citations">Цитирана литература</div>
             <ul>
                 <li>
                     [1] Guru99 Tech Pvt Ltd, "Load Testing Tutorial: What is? How to? (with Examples)", [ https://www.guru99.com/load-testing-tutorial.html ], последно посетен на 2020-04-08
@@ -432,7 +437,7 @@
                 </li>
             </ul>
        
-            <div class="heading">Списък с фигури</div>
+            <div class="heading" id="anchor-figures">Списък с фигури</div>
 
         </div>
 
