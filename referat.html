@@ -14,7 +14,7 @@
                        <li><a href="#anchor-terminology-a">Тестване на натовареност (Load Testing)</a></li>
                        <li><a href="#anchor-terminology-b">Стрес тестване (Stress Testing)</a></li>
                     </ol>
-                    <li><a href="#anchor-jmeter">Apache JMeter</a></li>
+                    <li><a href="#anchor-jmeter">JMeter</a></li>
                     <li><a href="#anchor-locust">Locust</a></li>
                     <li><a href="#anchor-gatling">Gatling</a></li>
                     <li><a href="#anchor-neoload">NeoLoad</a></li>
@@ -31,10 +31,10 @@
         <div class="content">
             <h1>Инструменти за стрес-тестове на уеб приложения</h1>
             <div class="heading" id="anchor-terminology">Основни понятия</div>
-            <img src="img/testing-01.png" alt="Load and Stress Testing">
+            <img src="img/testing-01.png" alt="Load and Stress Testing" id="image-testing">
             <div class="subheading" id="anchor-terminology-a">Тестване на натовареност (Load Testing)</div>
             <p>
-                Тестването на натовареност е вид нефункционално тестване и е под-множество на тестването на производителност. При този вид 
+                Тестването на натовареност е вид нефункционално тестване и е подмножество на тестването на производителност. При този вид 
                 тестване се изчислява производителността на едно уеб приложение когато конкретен брой потребители го използват 
                 едновременно. 
             </p>
@@ -49,7 +49,7 @@
                 <li> Връзката между клиент и сървър</li>
                 <li> Дизайна на софтуера</li>
                 <li>Конфигурация на сървъра</li>
-                <li> Ограниченията на хардуера <a href="#anchor-figures">[1]</a></li>
+                <li> Ограничения на хардуера <a href="#anchor-figures">[1]</a></li>
             </ul>
 
             <div class="subheading" id="anchor-terminology-b">Стрес тестване (Stress Testing)</div>  
@@ -75,10 +75,9 @@
             </ul>
 
             <div class="jmeter">
-                <div class="heading" id="anchor-jmeter"><img src="img/jmeter-01.png" alt="Apache JMeter"></div>
+                <div class="heading" id="anchor-jmeter"><img src="img/jmeter-01.png" alt="Apache JMeter" id="image-jmeter-1"></div>
                 <p>
-                    Apache JMeter е инструмент за стрес тестване с отворен код, разработено изцяло на Java. То е създадено за тестване на 
-                    натовареността на функционалностите и изчисляване на производителност. Приложението позволява тестване на 
+                    Apache JMeter е инструмент за стрес тестване с отворен код, разработено изцяло на Java. Той е създаден за тестване на натовареността на функционалностите и изчисляване на производителност. Приложението позволява тестване на 
                     производителността на както статични, така и динамични ресурси. Може да симулира натовареност върху обект, сървър, 
                     група от сървъри или мрежа. Така то изследва тяхната издържливост и ефективност при различни степени на натовареност. 
                     <a href="#anchor-figures">[3]</a>
@@ -96,28 +95,28 @@
                     <li>Тестерът анализира получения резултат <a href="#anchor-figures">[4]</a> </li>
                 </ol>
 
-                <img src="img/jmeter-02.png" alt="JMeter image 2">
-                <img src="img/jmeter-03.png" alt="JMeter image 3">
-                <img src="img/jmeter-04.png" alt="JMeter image 4">
+                <img src="img/jmeter-02.png" alt="JMeter image 2" id="image-jmeter-2">
+                <img src="img/jmeter-03.png" alt="JMeter image 3" id="image-jmeter-3">
+                <img src="img/jmeter-04.png" alt="JMeter image 4" id="image-jmeter-4">
 
                 <p>
                     Предимства и функционалности на JMeter:
                 </p>
                 <ol>
                     <li>Отворен код</li>
-                    JMeter е приложение с отворен код, което означава, че е напълно безплатен инструмент.
+                    <p>JMeter е приложение с отворен код, което означава, че е напълно безплатен инструмент.</p>
                     <li>Независим откъм платформата </li>
-                    Поради факта, че JMeter е десктоп приложение.
+                    <p>Поради факта, че JMeter е десктоп приложение.</p>
                     <li>Лесна инсталация</li>
-                    Нужно е единствено да се копира и изпълни .bat файла.
+                    <p>Нужно е единствено да се копира и изпълни .bat файла.</p>
                     <li>Ефикасна симулация </li>
-                    Чрез симулиране на различни потребители, които работят на паралелни нишки JMeter може да достигне желаната натовареност.
+                    <p>Чрез симулиране на различни потребители, които работят на паралелни нишки JMeter може да достигне желаната натовареност.</p>
                     <li>Визуализация от резултати на тестването </li>
-                    Резултатите от тест в JMeter може да представи по четири различни начина: като таблица, лог файл, дърво или диаграма.
+                    <p>Резултатите от тест в JMeter могат да се представят по четири различни начина: като таблица, лог файл, дърво или диаграма.</p>
                     <li>Поддръжка на протоколи </li>
-                    JMeter поддържа всички базови протоколи: HTTP, SOAP, LDAP, JDBC,  JMS, and FTP.
+                    <p>JMeter поддържа всички базови протоколи: HTTP, SOAP, LDAP, JDBC,  JMS, and FTP.</p>
                     <li>Интеграция с библиотеки с отворен код </li>
-                    JMeter е интегрирано с библиотеките Jenkins, Maven, and Gradle.
+                    <p>JMeter е интегриран с библиотеките Jenkins, Maven, and Gradle.</p>
                 </ol>
                 
                 <p>
@@ -125,17 +124,16 @@
                 </p>
                 <ol>
                     <li>Висока консумация на памет</li>
-                    JMeter симулациите изискват много памет за изпълнение и генериране на тестов отчет.
+                    <p>JMeter симулациите изискват много памет за изпълнение и генериране на тестов отчет.</p>
                     <li>Единствено за уеб приложения</li>
-                    JMeter е добър инструмент за тестване на уеб приложения, но не е удобен за десктоп приложения.
+                    <p>JMeter е добър инструмент за тестване на уеб приложения, но не е удобен за десктоп приложения.</p>
                     <li> Не поддържа JavaScript</li>
-                    JMeter е десктоп приложение, а не браузърно. Поради това то има трудности при обработката на информация от JavaScript и 
-                    AJAX, което може да доведе то неточности при симулацията.
+                    <p>JMeter е десктоп приложение, а не браузърно. Поради това то има трудности при обработката на информация от JavaScript и AJAX, което може да доведе то неточности при симулацията.</p>
                 </ol>
             </div>
 
             <div class="locust">
-                <div class="heading"  id="anchor-locust" ><img src="img/locust-01.jpg" alt="Locust"></div>
+                <div class="heading"  id="anchor-locust" ><img src="img/locust-01.jpg" alt="Locust" id="image-locust-1"></div>
                 <p>
                     Locust е инструмент за стрес тестване с отворен код. Той е предназначен за тестване на уеб сайтове и изчисляване на колко 
                     потребителя системата може да поддържа паралелно. Идеята зад инструмента е всеки тест да симулира „рояк от скакалци“, които 
@@ -151,42 +149,37 @@
                     <a href="#anchor-figures">[5]</a>
                 </p>
 
-                <img src="img/locust-02.png" alt="Locust image 2">
-                <img src="img/locust-03.png" alt="Locust image 3">
-                <img src="img/locust-04.png" alt="Locust image 4">
+                <img src="img/locust-02.png" alt="Locust image 2" id="image-locust-2">
+                <img src="img/locust-03.png" alt="Locust image 3" id="image-locust-3">
+                <img src="img/locust-04.png" alt="Locust image 4" id="image-locust-4">
                 <p>
                     Предимства и функционалности на Locust:
                 </p>
                 <ol>
                     <li>Може да тества всяка система</li>
-                     Инструментът е написан предимно за тестване на уеб приложения, но също позволява тестване и на други типове приложения.
+                    <p>Инструментът е написан предимно за тестване на уеб приложения, но също позволява тестване и на други типове приложения.</p>
                     <li>Писане на тестове на Python</li>
-                    Тестовете изглеждат и се изпълняват като обикновен код, написан на Python. Това е благодарение на факта, че инструмента 
-                    прилага coroutine функции, вместо callback.
+                    <p>Тестовете изглеждат и се изпълняват като обикновен код, написан на Python. Това е благодарение на факта, че инструмента прилага coroutine функции, вместо callback.</p>
                     <li>Инструментът е разпределен и скалируем</li>
-                    Locust поддържа стрес тестове, разпределени на няколко машини. А всяка инстанция на Locust позволява хиляди виртуални 
-                    потребители в един процес.
+                    <p>Locust поддържа стрес тестове, разпределени на няколко машини. А всяка инстанция на Locust позволява хиляди виртуални потребители в един процес.</p>
                     <li>Уеб-базиран потребителски интерфейс</li>
-                    Интерфейсът на Locust е разработен с JavaScript и HTML. Той показва важна за тестера информация в реално време. И поради 
-                    факта, че е базиран на уеб, той е лесно разширяем и може да се приложи в множество платформи.
+                    <p>Интерфейсът на Locust е разработен с JavaScript и HTML. Той показва важна за тестера информация в реално време. Поради факта, че е базиран на уеб, той е лесно разширяем и може да се приложи в множество платформи.</p>
                     <li>Лесно променлив код</li>
-                    Всичките сложни операции на инструмента се поемат от библиотека gevent. Locust е създаден с идеята да е лесно променлив и 
-                    има за цел да избегне чупливостта, от която страдат други подобни инструменти за стрес тестване.
+                    <p>Всичките сложни операции на инструмента се поемат от библиотека gevent. Locust е създаден с идеята да е лесно променлив и има за цел да избегне чупливостта, от която страдат други подобни инструменти за стрес тестване.</p>
                 </ol>
                 <p>
                     Недостатъци на Locust:
                 </p>
                 <ol>
                     <li>Загуба на статистики</li>
-                    Инструмента събира и представя статистика докато определен брой потребители не е достигнат. След това статистиката се 
-                    изтрива и се започва събирането от начало.
+                    <p> Инструмента събира и представя статистика докато определен брой потребители не е достигнат. След това статистиката се изтрива и се започва събирането от начало.</p>
                     <li>Липсващи ресурси</li>
-                    Инструментът няма да поиска URL адрес без изрично да се зададе да го търси
+                    <p>Инструментът няма да поиска URL адрес без изрично да се зададе да го търси.</p>
                 </ol>
             </div>
 
             <div class="gatling">
-                <div class="heading" id="anchor-gatling"><img src="img/gatling-01.png" alt="Gatling"></div>
+                <div class="heading" id="anchor-gatling"><img src="img/gatling-01.png" alt="Gatling" id="image-gatling-1"></div>
                
                 <p>
                     Gatling е инструмент за стрес-тестване, базиран на Scala. Предлага се версия с отворен код, Gatling, както и лицензирана 
@@ -198,20 +191,18 @@
                 </p>
                 <ol>
                     <li>Конфигурация на HTTP протокол</li>
-                    Помага да се дефинира базовият URL , който ще се тества. Също така позволява да се дефинира тестовия потребител, заглавна 
-                    част на езика и връзката.
+                    <p>Помага да се дефинира базовият URL , който ще се тества. Също така позволява да се дефинира тестовия потребител, заглавна част на езика и връзката. </p>
                     <li>Дефиниция на заглавна част</li>
-                    Изпълнява дефинирането на заглавната част на заявките, които се изпращат към сървъра.
+                    <p>Изпълнява дефинирането на заглавната част на заявките, които се изпращат към сървъра. </p>
                     <li>Дефиниция на тестов сценарий</li>
-                    Уточнява какви действия ще извърши тестовият потребител, за да се симулира по-точно реално взаимодействие между клиент и 
-                    сървър в приложението.
+                    <p>Уточнява какви действия ще извърши тестовият потребител, за да се симулира по-точно реално взаимодействие между клиент и сървър в приложението. </p>
                     <li>Дефиниция на симулация</li>
-                    Уточнява колко на брой тестови потребителя ще се изпълнят паралелно.
+                    <p>Уточнява колко на брой тестови потребителя ще се изпълнят паралелно. </p>
                 </ol>
 
-                <img src="img/gatling-02.png" alt="Gatling image 2">
-                <img src="img/gatling-03.png" alt="Gatling image 3">
-                <img src="img/gatling-04.png" alt="Gatling image 3">
+                <img src="img/gatling-02.png" alt="Gatling image 2" id="image-gatling-2">
+                <img src="img/gatling-03.png" alt="Gatling image 3" id="image-gatling-3">
+                <img src="img/gatling-04.png" alt="Gatling image 3" id="image-gatling-4">
 
                 <p>
                     Предимства и функционалности на Gatling:
@@ -237,7 +228,7 @@
             </div>
 
             <div class ="neoload">
-                <div class="heading" id="anchor-neoload"><img src="img/neoload-01.png" alt="NeoLoad"></div>
+                <div class="heading" id="anchor-neoload"><img src="img/neoload-01.png" alt="NeoLoad" id="image-neoload-1"></div>
                 
                 <p>
                     NeoLoad е инструмент за стрес тестване, написан на Java. Ефективен е при тестване както на уеб сайтове, така и на мобилни и 
@@ -245,9 +236,9 @@
                     паралелни потребителя. 
                 </p>
 
-                <img src="img/neoload-02.png" alt="NeoLoad image 2">
-                <img src="img/neoload-03.png" alt="NeoLoad image 3">
-                <img src="img/neoload-04.png" alt="NeoLoad image 4">
+                <img src="img/neoload-02.png" alt="NeoLoad image 2" id="image-neoload-2">
+                <img src="img/neoload-03.png" alt="NeoLoad image 3" id="image-neoload-3">
+                <img src="img/neoload-04.png" alt="NeoLoad image 4" id="image-neoload-4">
 
                 <p>
                     Предимства и функционалности на NeoLoad:
@@ -271,7 +262,7 @@
             </div>
             
             <div class="webload">
-                <div class="heading" id="anchor-webload"><img src="img/webload-01.png" alt="WebLOAD"></div>
+                <div class="heading" id="anchor-webload"><img src="img/webload-01.png" alt="WebLOAD" id="image-webload-1"></div>
                
                 <p>
                     WebLOAD е инструмент за стрес тестване и анализи, произведено от RadView Software. Това е мощен инструмент за тестване на
@@ -281,9 +272,9 @@
                     услуга.
                 </p>
 
-                <img src="img/webload-02.jpg" alt="WebLOAD image 2">
-                <img src="img/webload-03.jpg" alt="WebLOAD image 3">
-                <img src="img/webload-04.jpg" alt="WebLOAD image 4">
+                <img src="img/webload-02.jpg" alt="WebLOAD image 2" id="image-webload-2">
+                <img src="img/webload-03.jpg" alt="WebLOAD image 3" id="image-webload-3">
+                <img src="img/webload-04.jpg" alt="WebLOAD image 4" id="image-webload-4">
 
                 <p>
                     Предимства и функционалности на WebLOAD:
@@ -307,7 +298,7 @@
             </div>
 
             <div class="rpt">
-                <div class="heading" id="anchor-rpt"> <img src="img/rpt-01.png" alt="Rational Performance Tester"></div>
+                <div class="heading" id="anchor-rpt"> <img src="img/rpt-01.png" alt="Rational Performance Tester"  id="image-rpt-1"></div>
                
                 <p>
                     Rational Performance Tester (RPT) е инструмент за тестване на производителност, разработен от IBM. Може да се използва за
@@ -316,9 +307,9 @@
                     стрес тестване.
                 </p>
 
-                <img src="img/rpt-02.png" alt="RPT image 2">
-                <img src="img/rpt-03.png" alt="RPT image 3">
-                <img src="img/rpt-04.png" alt="RPT image 4">
+                <img src="img/rpt-02.png" alt="RPT image 2" id="image-rpt-2">
+                <img src="img/rpt-03.png" alt="RPT image 3" id="image-rpt-3">
+                <img src="img/rpt-04.png" alt="RPT image 4" id="image-rpt-4">
 
                 <p>
                     Предимства и функционалности на Rational Performance Tester:
@@ -340,7 +331,7 @@
             </div>
 
             <div class="silk">
-                <div class="heading" id="anchor-silk"><img src="img/silkperformer-01.png" alt="Silk Performer"></div>
+                <div class="heading" id="anchor-silk"><img src="img/silkperformer-01.png" alt="Silk Performer" id="image-silk-1"></div>
                 
                 <p>
                     Silk Performer е инструмент за стрес тестване, разработен от Micro Focus. Използва се за тестване на уеб, мобилни и 
@@ -348,9 +339,9 @@
                     анализират резултатите чрез вградени опции за диагностика и отчети. Софтуерът е напълно платен.
                 </p>
 
-                <img src="img/silkperformer-02.png" alt="Silk image 2">
-                <img src="img/silkperformer-03.png" alt="Silk image 3">
-                <img src="img/silkperformer-04.png" alt="Silk image 4">
+                <img src="img/silkperformer-02.png" alt="Silk image 2" id="image-silk-2">
+                <img src="img/silkperformer-03.png" alt="Silk image 3" id="image-silk-3">
+                <img src="img/silkperformer-04.png" alt="Silk image 4" id="image-silk-4">
 
                 <p>
                     Предимства и функционалности на Silk Performer:
@@ -378,7 +369,7 @@
             </div>
 
             <div class="loadrunner">
-                <div class="heading" id="anchor-loadrunner"> <img src="img/loadrunner-cloud-01.png" alt="LoadRunner"></div>
+                <div class="heading" id="anchor-loadrunner"> <img src="img/loadrunner-cloud-01.png" alt="LoadRunner" id="image-loadrunner-1"></div>
                
                 <p>
                     LoadRunner Cloud (познат също като StormRunner Load) е облачно-базиран инструмент за тестване на производителност, 
@@ -387,9 +378,9 @@
                 </p>
 
 
-                <img src="img/loadrunner-cloud-02.jpg" alt="LoadRunner image 2">
-                <img src="img/loadrunner-cloud-03.jpg" alt="LoadRunner image 3">
-                <img src="img/loadrunner-cloud-04.jpg" alt="LoadRunner image 4">
+                <img src="img/loadrunner-cloud-02.jpg" alt="LoadRunner image 2" id="image-loadrunner-2">
+                <img src="img/loadrunner-cloud-03.jpg" alt="LoadRunner image 3" id="image-loadrunner-3">
+                <img src="img/loadrunner-cloud-04.jpg" alt="LoadRunner image 4" id="image-loadrunner-4">
 
                 <p>
                     Предимства и функционалности на LoadRunner Cloud:
@@ -398,9 +389,9 @@
                     <li>Лесен за употреба</li>
                     <li>Поддържа HTTP/HTML, SAP Web, Java, Flex, TruClient Web, TruClient Native Mobile и TruClient Mobile Web протоколи</li>
                     <li>Тясна интеграция с Jenkins, Dynatrace, Gatling, Docker, AWS Code Pipeline и New Relic</li>
-                    <li>Може да се генерира натовареност от различни географски точки</li>
+                    <li>Може да генерира натовареност от различни географски точки</li>
                     <li>
-                        Висока скалируемост, като позволява да се създават тестови сценарии с повече от един милион уеб или мобилнипотребители
+                        Висока скалируемост, като позволява да се създават тестови сценарии с повече от един милион уеб или мобилни потребители
                     </li>
                     <li>Виртуалните потребители могат да бъдат добавяни или премахвани по време на изпълнението на тестов сценарий </li>
                     <li>Бързо откриване на проблеми с тестовите сценарии</li>
@@ -418,7 +409,7 @@
             </div>
 
             <div class="wapt">
-                <div class="heading" id="anchor-wapt"><img src="img/wapt-01.png" alt="WAPT"></div>
+                <div class="heading" id="anchor-wapt"><img src="img/wapt-01.png" alt="WAPT" id="image-wapt-1"></div>
                
                 <p>
                     WAPT е платен софтуер тестване на производителност, предназначен за екипи от уеб разработчици и QA специалисти. 
@@ -429,7 +420,7 @@
                     <li>WAPT - Базова версия с годишен лиценз, която допуска тестване с до 2000 паралелни потребителя 
                         <a href="#anchor-figures">[7]</a></li>
                     <li>
-                        WAPT Pro - Разширена версия с годишен лиценз, която има допълнителни функционалности и допуска тестване с до един 
+                        WAPT Pro - Разширена версия с годишен лиценз, която предлага допълнителни функционалности и допуска тестване с до един 
                         милион паралелни потребителя <a href="#anchor-figures">[8]</a>
                     </li>
                     <li>WAPT Cloud - Облачна услуга, която се заплаща на час в зависимост от размера на провежданите тестове 
@@ -437,9 +428,9 @@
                 </ul>
 
  
-                <img src="img/wapt-02.png" alt="WAPT image 2">
-                <img src="img/wapt-03.png" alt="WAPT image 3">
-                <img src="img/wapt-04.jpg" alt="WAPT image 4">
+                <img src="img/wapt-02.png" alt="WAPT image 2" id="image-wapt-2">
+                <img src="img/wapt-03.png" alt="WAPT image 3" id="image-wapt-3">
+                <img src="img/wapt-04.jpg" alt="WAPT image 4" id="image-wapt-4">
 
                 <p>
                     Предимства и функционалности на WAPT:
@@ -467,92 +458,111 @@
                 <li>
                     [1] Guru99 Tech Pvt Ltd, "Load Testing Tutorial: What is? How to? (with Examples)", 
                     [ <a href="https://www.guru99.com/load-testing-tutorial.html">https://www.guru99.com/load-testing-tutorial.html</a> ], 
-                    последно посетен на 2020-04-08
+                    последно посетен на 08-04-2020
                 </li>
                 <li>
                     [2] Guru99 Tech Pvt Ltd, "What is STRESS Testing in Software Testing? Tools, Types, Examples", 
                     [ <a href="https://www.guru99.com/stress-testing-tutorial.html">https://www.guru99.com/stress-testing-tutorial.html</a> ], 
-                    последно посетен на 2020-04-08
+                    последно посетен на 08-04-2020
                 </li>
                 <li>
                     [3] Яна Густи, “TOP 20 tools for load testing in 2018”, 
-                    публикувано на 2017-05-08,
+                    публикувано на 08-05-2017,
                     [ <a href="https://geteasyqa.com/blog/best-tools-load-testing/">https://geteasyqa.com/blog/best-tools-load-testing/</a> ], 
-                    последно посетен на 2020-04-08
+                    последно посетен на 08-04-2020
                 </li>
                 <li>
                     [4] ElysiumAcademy Private Limited, “What is JMeter? Why use JMeter? Advantages and disadvantages”, 
-                    публикувано на 2017-06-03, 
+                    публикувано на 03-06-2017, 
                     [ <a href="https://www.linkedin.com/pulse/what-jmeter-why-use-advantages-disadvantages-private-limited">https://www.linkedin.com/pulse/what-jmeter-why-use-advantages-disadvantages-private-limited</a>  ], 
-                    последно посетен на 2020-04-08
+                    последно посетен на 08-04-2020
                 </li>
                 <li>
                     [5] Джонатан Хейман и други, “Locust Documentation, Getting started, What is Locust?”, 
                     [ <a href="https://docs.locust.io/en/latest/what-is-locust.html">https://docs.locust.io/en/latest/what-is-locust.html</a> ], 
-                    последно посетен на 2020-04-08
+                    последно посетен на 08-04-2020
                 </li>
                 <li>
                     [6] Calleo Consultants Ltd, “StormRunner Load (also known as LoadRunner Cloud)”, 
                     [ <a href="https://www.calleosoftware.co.uk/products/performance-testing/stormrunner-load">https://www.calleosoftware.co.uk/products/performance-testing/stormrunner-load</a> ], 
-                    последно посетен на 2020-04-08
+                    последно посетен на 08-04-2020
                 </li>
                 <li>
                     [7] SoftLogica, “WAPT 10: Performance testing tool for web and mobile applications”, 
-                    [  <a href="https://www.loadtestingtool.com/product.shtml">https://www.loadtestingtool.com/product.shtml</a> ], последно посетен на 2020-04-08
+                    [  <a href="https://www.loadtestingtool.com/product.shtml">https://www.loadtestingtool.com/product.shtml</a> ], последно посетен на 08-04-2020
                 </li>
                 <li>
                     [8] SoftLogica, “WAPT Pro 5: Scalable performance testing solution”, 
                     [  <a href="https://www.loadtestingtool.com/pro.shtml">https://www.loadtestingtool.com/pro.shtml</a> ], 
-                    последно посетен на 2020-04-08
+                    последно посетен на 08-04-2020
                 </li>
                 <li>
                     [9] SoftLogica, “WAPT Cloud: On-demand performance testing solution in the cloud”, 
                     [  <a href="https://www.loadtestingtool.com/cloud-testing.shtml">https://www.loadtestingtool.com/cloud-testing.shtml</a>], 
-                    последно посетен на 2020-04-08
+                    последно посетен на 08-04-2020
+                </li>
+                <li>
+                    [10] Guru99 Tech Pvt Ltd, “How to Use JMeter for Performance & Load Testing”, 
+                    [  <a href="https://www.guru99.com/jmeter-performance-testing.html">https://www.guru99.com/jmeter-performance-testing.html</a>], 
+                    последно посетен на 10-04-2020
+                </li>
+                <li>
+                    [11]  Anuraj, “Load testing Web API using Apache JMeter”, 
+                    публикувано на 05-09-2013
+                    [  <a href="https://dotnetthoughts.net/load-testing-web-api-using-apache-jmeter/">https://dotnetthoughts.net/load-testing-web-api-using-apache-jmeter/</a>], 
+                    последно посетен на 10-04-2020
                 </li>
             </ul>
        
             <div class="heading" id="anchor-figures">Списък с фигури</div>
             <div class="figures">
                 <ul>
+                    <li><a href="#image-testing">Фигура 1. Тестване на натовареност</a> </li>
 
-                    <li>Фигура 1. Тестване на натовареност</li>
-                    <li>Фигура 2. Лого на Apache JMeter</li>
-                    <li>Фигура 3. Процес на тестване в JMeter</li>
-                    <li>Фигура 4. Конфигурация на нишки в JMeter</li>
-                    <li>Фигура 5. Резултат от тестване в JMeter</li>
-                    <li>Фигура 6. Лого на Locust</li>
-                    <li>Фигура 7. Конфигурация на брой потребители в Locust</li>
-                    <li>Фигура 8. Статистика на резултати от тестване в Locust</li>
-                    <li>Фигура 9. Информация за настъпили грешки по време на тестване в Locust</li>
-                    <li>Фигура 10. Лого на Gatling</li>
-                    <li>Фигура 11. Конфигурация на протоколи в Gatling</li>
-                    <li>Фигура 12. Отчет от тестване в Gatling</li>
-                    <li>Фигура 13. Статистика на заявки и отговори в Gatling</li>
-                    <li>Фигура 14. Лого на NeoLoad</li>
-                    <li>Фигура 15. Приложен програмен интерфейс на NeoLoad</li>
-                    <li>Фигура 16. Създаване на облачна сесия в NeoLoad</li>
-                    <li>Фигура 17. Валидация на тестови сценарии в NeoLoad</li>
-                    <li>Фигура 18. Лого на WebLOAD</li>
-                    <li>Фигура 19. Начално табло на WebLOAD</li>
-                    <li>Фигура 20. Примерен тестов сценарий в WebLOAD</li>
-                    <li>Фигура 21. Отчет в WebLOAD</li>
-                    <li>Фигура 22. Лого на RPT</li>
-                    <li>Фигура 23. Конфигурация на протокол при използване на REST услуга в RPT</li>
-                    <li>Фигура 24. Стартиране на заявка при използване на REST услуга в RPT</li>
-                    <li>Фигура 25. Информация за заявка при използване на REST услуга в RPT</li>
-                    <li>Фигура 26. Лого на Silk Performer</li>
-                    <li>Фигура 27. Потребителски интерфейс на Silk Performer</li>
-                    <li>Фигура 28. Стартиране на скрипт в Silk Performer</li>
-                    <li>Фигура 29. Тестов резултат в Silk Performer</li>
-                    <li>Фигура 30. Лого на LoadRunner Cloud</li>
-                    <li>Фигура 31. Начално табло на LoadRunner Cloud</li>
-                    <li>Фигура 32. Разпределение на натовареността в LoadRunner Cloud</li>
-                    <li>Фигура 33. Резултат от тестване в LoadRunner Cloud</li>
-                    <li>Фигура 34. Лого на WAPT</li>
-                    <li>Фигура 35. Конфигурация на тест в WAPT</li>
-                    <li>Фигура 36. Разпределяне на виртуални потребители в WAPT</li>
-                    <li>Фигура 37. Тестов резултат в WAPT</li>
+                    <li><a href="#image-jmeter-1">Фигура 2. Лого на Apache JMeter</a></li>
+                    <li><a href="#image-jmeter-2">Фигура 3. Процес на тестване в JMeter</a></li>
+                    <li><a href="#image-jmeter-3">Фигура 4. Конфигурация на нишки в JMeter</a></li>
+                    <li><a href="#image-jmeter-4">Фигура 5. Резултат от тестване в JMeter</a></li>
+
+                    <li><a href="#image-locust-1">Фигура 6. Лого на Locust</a></li>
+                    <li><a href="#image-locust-2">Фигура 7. Конфигурация на брой потребители в Locust</a></li>
+                    <li><a href="#image-locust-3">Фигура 8. Статистика на резултати от тестване в Locust</a></li>
+                    <li><a href="#image-locust-4">Фигура 9. Информация за настъпили грешки по време на тестване в Locust</a></li>
+
+                    <li><a href="#image-gatling-1">Фигура 10. Лого на Gatling</a> <a href="#anchor-figures">[3]</a></li>
+                    <li><a href="#image-gatling-2">Фигура 11. Конфигурация на протоколи в Gatling</a></li>
+                    <li><a href="#image-gatling-3">Фигура 12. Отчет от тестване в Gatling</a></li>
+                    <li><a href="#image-gatling-4">Фигура 13. Статистика на заявки и отговори в Gatling</a></li>
+
+                    <li><a href="#image-neoload-1">Фигура 14. Лого на NeoLoad</a></li>
+                    <li><a href="#image-neoload-2">Фигура 15. Приложен програмен интерфейс на NeoLoad</a></li>
+                    <li><a href="#image-neoload-3">Фигура 16. Създаване на облачна сесия в NeoLoad</a></li>
+                    <li><a href="#image-neoload-4">Фигура 17. Валидация на тестови сценарии в NeoLoad</a></li>
+
+                    <li><a href="#image-webload-1">Фигура 18. Лого на WebLOAD</a> <a href="#anchor-figures">[3]</a></li>
+                    <li><a href="#image-webload-2">Фигура 19. Начално табло на WebLOAD</a></li>
+                    <li><a href="#image-webload-3">Фигура 20. Примерен тестов сценарий в WebLOAD</a></li>
+                    <li><a href="#image-webload-4">Фигура 21. Отчет в WebLOAD</a></li>
+
+                    <li><a href="#image-rpt-1">Фигура 22. Лого на RPT</a></li>
+                    <li><a href="#image-rpt-2">Фигура 23. Конфигурация на протокол при използване на REST услуга в RPT</a></li>
+                    <li><a href="#image-rpt-3">Фигура 24. Стартиране на заявка при използване на REST услуга в RPT</a></li>
+                    <li><a href="#image-rpt-4">Фигура 25. Информация за заявка при използване на REST услуга в RPT</a></li>
+
+                    <li><a href="#image-silk-1">Фигура 26. Лого на Silk Performer</a></li>
+                    <li><a href="#image-silk-2">Фигура 27. Потребителски интерфейс на Silk Performer</a></li>
+                    <li><a href="#image-silk-3">Фигура 28. Стартиране на скрипт в Silk Performer</a></li>
+                    <li><a href="#image-silk-4">Фигура 29. Тестов резултат в Silk Performer</a></li>
+
+                    <li><a href="#image-loadrunner-1">Фигура 30. Лого на LoadRunner Cloud</a></li>
+                    <li><a href="#image-loadrunner-2">Фигура 31. Начално табло на LoadRunner Cloud</a></li>
+                    <li><a href="#image-loadrunner-3">Фигура 32. Разпределение на натовареността в LoadRunner Cloud</a></li>
+                    <li><a href="#image-loadrunner-4">Фигура 33. Резултат от тестване в LoadRunner Cloud</a></li>
+
+                    <li><a href="#image-wapt-1">Фигура 34. Лого на WAPT</a> <a href="#anchor-figures">[3]</a></li>
+                    <li><a href="#image-wapt-2">Фигура 35. Конфигурация на тест в WAPT</a></li>
+                    <li><a href="#image-wapt-3">Фигура 36. Разпределяне на виртуални потребители в WAPT</a></li>
+                    <li><a href="#image-wapt-4">Фигура 37. Тестов резултат в WAPT</a></li>
                 </ul>
             </div>
         </div>
