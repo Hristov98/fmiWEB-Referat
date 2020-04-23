@@ -100,7 +100,7 @@ figcaption
     text-align: center;
 }
 
-#image-testing figcaption, #image-locust-2 figcaption, #image-neoload-1 figcaption, #image-webload-3 figcaption
+#image-testing figcaption, #image-neoload-1 figcaption, #image-webload-3 figcaption
 {
     width: 450px;
 }
