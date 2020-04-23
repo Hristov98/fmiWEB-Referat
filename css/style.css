@@ -115,7 +115,7 @@ figcaption
     width: 680px;
 }
 
-#image-jmeter-1 figcaption
+#image-jmeter-1 figcaption, #image-rpt-1 figcaption
 {
     width: 500px;
 }
@@ -133,6 +133,31 @@ figcaption
 #image-webload-2 figcaption
 {
     width: 620px;
+}
+
+#image-rpt-2 figcaption
+{
+    width: 530px;
+}
+
+#image-silk-1 figcaption, #image-loadrunner-1 figcaption
+{
+    width: 200px;
+}
+
+#image-silk-3 figcaption
+{
+    width: 750px;
+}
+
+#image-wapt-1 figcaption
+{
+    width: 220px;
+}
+
+#image-wapt-2 figcaption, #image-wapt-3 figcaption
+{
+    width: 770px;
 }
 
 .citations article ul li
