@@ -76,11 +76,16 @@ h3
     padding: 0px 10px;
 }
 
+.heading
+{
+    max-width: 500px;
+    max-height: 200px;
+}
+
 figure
 {
     margin: 40px 0px;
 }
-
 
 img
 {
@@ -95,19 +100,19 @@ figcaption
     text-align: center;
 }
 
-#image-testing figcaption
+#image-testing figcaption, #image-locust-2 figcaption, #image-neoload-1 figcaption, #image-webload-3 figcaption
 {
-    width: 466px;
+    width: 450px;
 }
 
-#image-jmeter-1 figcaption, #image-jmeter-2 figcaption
+#image-jmeter-1 figcaption, #image-jmeter-2 figcaption, #image-gatling-1 figcaption
 {
     width: 500px;
 }
 
-#image-jmeter-3 figcaption
+#image-jmeter-3 figcaption, #image-gatling-2 figcaption
 {
-    width: 670px;
+    width: 680px;
 }
 
 #image-jmeter-1 figcaption
@@ -115,14 +120,19 @@ figcaption
     width: 500px;
 }
 
-
-
-
-
-.heading
+#image-locust-1 figcaption
 {
-    max-width: 500px;
-    max-height: 200px;
+    width: 330px;
+}
+
+#image-webload-1 figcaption
+{
+    width: 400px;
+}
+
+#image-webload-2 figcaption
+{
+    width: 620px;
 }
 
 .citations article ul li
