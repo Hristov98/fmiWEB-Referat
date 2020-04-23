@@ -1,0 +1,150 @@
+body
+{
+    font-family: Arial, sans-serif;
+}
+
+nav
+{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #68ffe6;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+nav p
+{
+    padding-left: 30px;
+    font-size: 26px;
+    display: block;
+}
+
+nav ol 
+{
+    padding: 0px 8px 6px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+
+nav ol li a:link
+{
+    color: black;
+    text-decoration: none;
+}
+
+nav ol li a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+
+nav ol li a:hover
+{
+    color: rgba(81, 107, 255, 0.993);
+}
+
+h1
+{
+    font-size: 35px;
+    text-align: center;
+}
+
+h2
+{
+    width: 50%;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: solid;    
+    border-color: black;
+}
+
+h3
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.content
+{
+    margin-left: 300px; 
+    font-size: 16px; 
+    padding: 0px 10px;
+}
+
+figure
+{
+    margin: 40px 0px;
+}
+
+
+img
+{
+    display: block;
+    max-width: 800px;
+    max-height: 600px;
+}
+
+figcaption
+{
+    width: 800px;
+    text-align: center;
+}
+
+#image-testing figcaption
+{
+    width: 466px;
+}
+
+#image-jmeter-1 figcaption, #image-jmeter-2 figcaption
+{
+    width: 500px;
+}
+
+#image-jmeter-3 figcaption
+{
+    width: 670px;
+}
+
+#image-jmeter-1 figcaption
+{
+    width: 500px;
+}
+
+
+
+
+
+.heading
+{
+    max-width: 500px;
+    max-height: 200px;
+}
+
+.citations article ul li
+{
+    margin: 10px 0px;
+}
+
+.figures article ul li a:link
+{
+    color: blue;
+    text-decoration: none;
+}
+
+.figures article ul li a:visited
+{
+    color: blue;
+    text-decoration: none;
+}
+
+.figures article ul li a:hover
+{
+    color: black;
+    font-weight: bold;
+}
+
