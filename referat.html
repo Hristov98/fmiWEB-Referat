@@ -9,11 +9,13 @@
         <nav>
             <p>Съдържание</p>
             <ol>
-                <li><a href="#anchor-terminology">Основни понятия</a></li>
-                <ol type="a">
-                   <li><a href="#anchor-terminology-a">Тестване на натовареност (Load Testing)</a></li>
-                   <li><a href="#anchor-terminology-b">Стрес тестване (Stress Testing)</a></li>
-                </ol>
+                <li>
+                    <a href="#anchor-terminology">Основни понятия</a>
+                    <ol type="a">
+                        <li><a href="#anchor-terminology-a">Тестване на натовареност (Load Testing)</a></li>
+                        <li><a href="#anchor-terminology-b">Стрес тестване (Stress Testing)</a></li>
+                    </ol>
+                </li>
                 <li><a href="#anchor-jmeter">JMeter</a></li>
                 <li><a href="#anchor-locust">Locust</a></li>
                 <li><a href="#anchor-gatling">Gatling</a></li>
@@ -23,7 +25,13 @@
                 <li><a href="#anchor-silk">Silk Performer</a></li>
                 <li><a href="#anchor-loadrunner">LoadRunner Cloud</a></li>
                 <li><a href="#anchor-wapt">WAPT</a></li>
-                <li><a href="#anchor-citations">Цитирана литература</a></li>
+                <li>
+                    <a href="#anchor-citations">Цитирана литература</a>
+                    <ol type="a">
+                        <li><a href="#anchor-citations-content">Текстово съдържание</a></li>
+                        <li><a href="#anchor-citations-figures">Фигури</a></li>
+                     </ol>
+                </li>
                 <li><a href="#anchor-figures">Списък с фигури</a></li>
              </ol>
         </nav>
@@ -70,7 +78,7 @@
                     </p> 
                     <p>
                         Една от целите на стрес тестването е да осигури, че системата няма да се срине при непредвидени ситуации. Чрез огромен брой 
-                        входни данни то определя границата на натовареността, при която ще се счупи системата.  </p> 
+                        входни данни то определя границата на натовареността, при която ще се счупи системата.</p> 
                     <p>
                         Друга цел е на стрес тестването да осигури, че системата правилно се възстановява след като се премине границата на 
                         натовареност, т.е да се провери поведението на системата след като вече е настъпил срив.
@@ -111,7 +119,7 @@
                         <li>Тези отговори се събират и визуализират под формата на диаграма</li>
                         <li>JMeter обработва информацията, получена от сървъра</li>
                         <li>JMeter генерира тестов резултат в различни формати (текст, XML, JSON)</li>
-                        <li>Тестерът анализира получения резултат <a href="#anchor-citations">[4]</a> </li>
+                        <li>Тестерът анализира получения резултат <a href="#anchor-citations">[4]</a></li>
                     </ol>
                 </article>
                 
@@ -135,32 +143,52 @@
                         Предимства и функционалности на JMeter:
                     </p>
                     <ol>
-                        <li>Отворен код</li>
-                        <p>JMeter е приложение с отворен код, което означава, че е напълно безплатен инструмент.</p>
-                        <li>Независим откъм платформата </li>
-                        <p>Поради факта, че JMeter е десктоп приложение.</p>
-                        <li>Лесна инсталация</li>
-                        <p>Нужно е единствено да се копира и изпълни .bat файла.</p>
-                        <li>Ефикасна симулация </li>
-                        <p>Чрез симулиране на различни потребители, които работят на паралелни нишки JMeter може да достигне желаната натовареност.</p>
-                        <li>Визуализация от резултати на тестването </li>
-                        <p>Резултатите от тест в JMeter могат да се представят по четири различни начина: като таблица, лог файл, дърво или диаграма.</p>
-                        <li>Поддръжка на протоколи </li>
-                        <p>JMeter поддържа всички базови протоколи: HTTP, SOAP, LDAP, JDBC,  JMS, and FTP.</p>
-                        <li>Интеграция с библиотеки с отворен код </li>
-                        <p>JMeter е интегриран с библиотеките Jenkins, Maven, and Gradle.</p>
+                        <li>
+                            Отворен код
+                            <p>JMeter е приложение с отворен код, което означава, че е напълно безплатен инструмент.</p>
+                        </li>
+                        <li>
+                            Независим откъм платформата
+                            <p>Поради факта, че JMeter е десктоп приложение.</p>
+                        </li>
+                        <li>
+                            Лесна инсталация
+                            <p>Нужно е единствено да се копира и изпълни .bat файла.</p>
+                        </li>
+                        <li>
+                            Ефикасна симулация
+                            <p>Чрез симулиране на различни потребители, които работят на паралелни нишки JMeter може да достигне желаната натовареност.</p>
+                        </li>
+                        <li>
+                            Визуализация от резултати на тестването 
+                            <p>Резултатите от тест в JMeter могат да се представят по четири различни начина: като таблица, лог файл, дърво или диаграма.</p>
+                        </li>
+                        <li>
+                            Поддръжка на протоколи 
+                            <p>JMeter поддържа всички базови протоколи: HTTP, SOAP, LDAP, JDBC,  JMS, and FTP.</p>
+                        </li>
+                        <li>
+                            Интеграция с библиотеки с отворен код 
+                            <p>JMeter е интегриран с библиотеките Jenkins, Maven, and Gradle.</p>
+                        </li>
                     </ol>
                     
                     <p>
                         Недостатъци на JMeter:
                     </p>
                     <ol>
-                        <li>Висока консумация на памет</li>
-                        <p>JMeter симулациите изискват много памет за изпълнение и генериране на тестов отчет.</p>
-                        <li>Единствено за уеб приложения</li>
-                        <p>JMeter е добър инструмент за тестване на уеб приложения, но не е удобен за десктоп приложения.</p>
-                        <li> Не поддържа JavaScript</li>
-                        <p>JMeter е десктоп приложение, а не браузърно. Поради това то има трудности при обработката на информация от JavaScript и AJAX, което може да доведе то неточности при симулацията.</p>
+                        <li>
+                            Висока консумация на памет
+                            <p>JMeter симулациите изискват много памет за изпълнение и генериране на тестов отчет.</p>
+                        </li>
+                        <li>
+                            Единствено за уеб приложения
+                            <p>JMeter е добър инструмент за тестване на уеб приложения, но не е удобен за десктоп приложения.</p>
+                        </li>
+                        <li> 
+                            Не поддържа JavaScript
+                            <p>JMeter е десктоп приложение, а не браузърно. Поради това то има трудности при обработката на информация от JavaScript и AJAX, което може да доведе то неточности при симулацията.</p>
+                        </li>
                     </ol>
                 </article>
             </section>
@@ -210,25 +238,39 @@
                         Предимства и функционалности на Locust:
                     </p>
                     <ol>
-                        <li>Може да тества всяка система</li>
-                        <p>Инструментът е написан предимно за тестване на уеб приложения, но също позволява тестване и на други типове приложения.</p>
-                        <li>Писане на тестове на Python</li>
-                        <p>Тестовете изглеждат и се изпълняват като обикновен код, написан на Python. Това е благодарение на факта, че инструмента прилага coroutine функции, вместо callback.</p>
-                        <li>Инструментът е разпределен и скалируем</li>
-                        <p>Locust поддържа стрес тестове, разпределени на няколко машини. А всяка инстанция на Locust позволява хиляди виртуални потребители в един процес.</p>
-                        <li>Уеб-базиран потребителски интерфейс</li>
-                        <p>Интерфейсът на Locust е разработен с JavaScript и HTML. Той показва важна за тестера информация в реално време. Поради факта, че е базиран на уеб, той е лесно разширяем и може да се приложи в множество платформи.</p>
-                        <li>Лесно променлив код</li>
-                        <p>Всичките сложни операции на инструмента се поемат от библиотека gevent. Locust е създаден с идеята да е лесно променлив и има за цел да избегне чупливостта, от която страдат други подобни инструменти за стрес тестване.</p>
+                        <li>
+                            Може да тества всяка система
+                            <p>Инструментът е написан предимно за тестване на уеб приложения, но също позволява тестване и на други типове приложения.</p>
+                        </li>
+                        <li>
+                            Писане на тестове на Python
+                            <p>Тестовете изглеждат и се изпълняват като обикновен код, написан на Python. Това е благодарение на факта, че инструмента прилага coroutine функции, вместо callback.</p>
+                        </li>
+                        <li>
+                            Инструментът е разпределен и скалируем
+                            <p>Locust поддържа стрес тестове, разпределени на няколко машини. А всяка инстанция на Locust позволява хиляди виртуални потребители в един процес.</p>
+                        </li>
+                        <li>
+                            Уеб-базиран потребителски интерфейс
+                            <p>Интерфейсът на Locust е разработен с JavaScript и HTML. Той показва важна за тестера информация в реално време. Поради факта, че е базиран на уеб, той е лесно разширяем и може да се приложи в множество платформи.</p>
+                        </li>
+                        <li>
+                            Лесно променлив код
+                            <p>Всичките сложни операции на инструмента се поемат от библиотека gevent. Locust е създаден с идеята да е лесно променлив и има за цел да избегне чупливостта, от която страдат други подобни инструменти за стрес тестване.</p>
+                        </li>
                     </ol>
                     <p>
                         Недостатъци на Locust:
                     </p>
                     <ol>
-                        <li>Загуба на статистики</li>
-                        <p> Инструмента събира и представя статистика докато определен брой потребители не е достигнат. След това статистиката се изтрива и се започва събирането от начало.</p>
-                        <li>Липсващи ресурси</li>
-                        <p>Инструментът няма да поиска URL адрес без изрично да се зададе да го търси.</p>
+                        <li>
+                            Загуба на статистики
+                            <p> Инструмента събира и представя статистика докато определен брой потребители не е достигнат. След това статистиката се изтрива и се започва събирането от начало.</p>
+                        </li>
+                        <li>
+                            Липсващи ресурси
+                            <p>Инструментът няма да поиска URL адрес без изрично да се зададе да го търси. <a href="#anchor-citations">[3]</a></p>
+                        </li>
                     </ol>
                 </article>
             </section>
@@ -251,14 +293,22 @@
                         Структурата на Gatling се разделя на четири компонента:
                     </p>
                     <ol>
-                        <li>Конфигурация на HTTP протокол</li>
-                        <p>Помага да се дефинира базовият URL , който ще се тества. Също така позволява да се дефинира тестовия потребител, заглавна част на езика и връзката. </p>
-                        <li>Дефиниция на заглавна част</li>
-                        <p>Изпълнява дефинирането на заглавната част на заявките, които се изпращат към сървъра. </p>
-                        <li>Дефиниция на тестов сценарий</li>
-                        <p>Уточнява какви действия ще извърши тестовият потребител, за да се симулира по-точно реално взаимодействие между клиент и сървър в приложението. </p>
-                        <li>Дефиниция на симулация</li>
-                        <p>Уточнява колко на брой тестови потребителя ще се изпълнят паралелно. </p>
+                        <li>
+                            Конфигурация на HTTP протокол
+                            <p>Помага да се дефинира базовият URL , който ще се тества. Също така позволява да се дефинира тестовия потребител, заглавна част на езика и връзката.</p>
+                        </li>
+                        <li>
+                            Дефиниция на заглавна част
+                            <p>Изпълнява дефинирането на заглавната част на заявките, които се изпращат към сървъра.</p>
+                        </li>
+                        <li>
+                            Дефиниция на тестов сценарий
+                            <p>Уточнява какви действия ще извърши тестовият потребител, за да се симулира по-точно реално взаимодействие между клиент и сървър в приложението.</p>
+                        </li>
+                        <li>
+                            Дефиниция на симулация
+                            <p>Уточнява колко на брой тестови потребителя ще се изпълнят паралелно.</p>
+                        </li>
                     </ol>
                 </article>
 
@@ -635,7 +685,7 @@
                         <li>Позволява тестване на сигурността на уеб сайтове</li>
                         <li>Бързо проектиране и записване на тестови сценарии</li>
                         <li>Позволява да се включва изпълнение на JavaScript код в поведението на виртуалните потребители</li>
-                        <li>Позволява разглеждане на добре-илюстрирани и подробни отчети дори по време на изпълнение на тестови сценарии </li>
+                        <li>Позволява разглеждане на добре-илюстрирани и подробни отчети дори по време на изпълнение на тестови сценарии</li>
                         <li>Добре развито докладване на грешки спрямо различни фактори</li>
                     </ol>
                     <p>
@@ -650,152 +700,143 @@
 
             <section class="citations">
                 <h2 class="heading" id="anchor-citations">Цитирана литература</h2>
-                <h3>Съдържание</h3>
                 <article>
+                    <h3 id="anchor-citations-content">Текстово съдържание</h3>
                     <ul>
                         <li>
-                            [1] Guru99 Tech Pvt Ltd, "Load Testing Tutorial: What is? How to? (with Examples)", 
-                            [ <a href="https://www.guru99.com/load-testing-tutorial.html">https://www.guru99.com/load-testing-tutorial.html</a> ], 
-                            последно посетен на 08-04-2020
+                            <p>[1] Guru99 Tech Pvt Ltd, "Load Testing Tutorial: What is? How to? (with Examples)",</p>
+                            <p>[ <a href="https://www.guru99.com/load-testing-tutorial.html">https://www.guru99.com/load-testing-tutorial.html</a> ],</p>
+                            <p>последно посетен на 24-04-2020</p>
                         </li>
                         <li>
-                            [2] Guru99 Tech Pvt Ltd, "What is STRESS Testing in Software Testing? Tools, Types, Examples", 
-                            [ <a href="https://www.guru99.com/stress-testing-tutorial.html">https://www.guru99.com/stress-testing-tutorial.html</a> ], 
-                            последно посетен на 08-04-2020
+                            <p>[2] Guru99 Tech Pvt Ltd, "What is STRESS Testing in Software Testing? Tools, Types, Examples",</p>
+                            <p>[ <a href="https://www.guru99.com/stress-testing-tutorial.html">https://www.guru99.com/stress-testing-tutorial.html</a> ],</p>
+                            <p>последно посетен на 24-04-2020</p>
                         </li>
                         <li>
-                            [3] Яна Густи, “TOP 20 tools for load testing in 2018”, 
-                            публикувано на 08-05-2017,
-                            [ <a href="https://geteasyqa.com/blog/best-tools-load-testing/">https://geteasyqa.com/blog/best-tools-load-testing/</a> ], 
-                            последно посетен на 08-04-2020
+                            <p>[3] Яна Густи, “TOP 20 tools for load testing in 2018”, публикувано на 08-05-2017,</p>
+                            <p>[ <a href="https://geteasyqa.com/blog/best-tools-load-testing/">https://geteasyqa.com/blog/best-tools-load-testing/</a> ],</p>
+                            <p>последно посетен на 24-04-2020</p>
                         </li>
                         <li>
-                            [4] ElysiumAcademy Private Limited, “What is JMeter? Why use JMeter? Advantages and disadvantages”, 
-                            публикувано на 03-06-2017, 
-                            [ <a href="https://www.linkedin.com/pulse/what-jmeter-why-use-advantages-disadvantages-private-limited">https://www.linkedin.com/pulse/what-jmeter-why-use-advantages-disadvantages-private-limited</a> ], 
-                            последно посетен на 08-04-2020
+                            <p>[4] ElysiumAcademy Private Limited, “What is JMeter? Why use JMeter? Advantages and disadvantages”, публикувано на 03-06-2017,</p>
+                            <p>[ <a href="https://www.linkedin.com/pulse/what-jmeter-why-use-advantages-disadvantages-private-limited">https://www.linkedin.com/pulse/what-jmeter-why-use-advantages-disadvantages-private-limited</a> ],</p>
+                            <p>последно посетен на 24-04-2020</p>
                         </li>
                         <li>
-                            [5] Джонатан Хейман и други, “Locust Documentation, Getting started, What is Locust?”, 
-                            [ <a href="https://docs.locust.io/en/latest/what-is-locust.html">https://docs.locust.io/en/latest/what-is-locust.html</a> ], 
-                            последно посетен на 08-04-2020
+                            <p>[5] Джонатан Хейман и други, “Locust Documentation, Getting started, What is Locust?”,</p>
+                            <p>[ <a href="https://docs.locust.io/en/latest/what-is-locust.html">https://docs.locust.io/en/latest/what-is-locust.html</a> ],</p>
+                            <p>последно посетен на 24-04-2020</p>
                         </li>
                         <li>
-                            [6] Calleo Consultants Ltd, “StormRunner Load (also known as LoadRunner Cloud)”, 
-                            [ <a href="https://www.calleosoftware.co.uk/products/performance-testing/stormrunner-load">https://www.calleosoftware.co.uk/products/performance-testing/stormrunner-load</a> ], 
-                            последно посетен на 08-04-2020
+                            <p>[6] Calleo Consultants Ltd, “StormRunner Load (also known as LoadRunner Cloud)”,</p>
+                            <p>[ <a href="https://www.calleosoftware.co.uk/products/performance-testing/stormrunner-load">https://www.calleosoftware.co.uk/products/performance-testing/stormrunner-load</a> ],</p>
+                            <p>последно посетен на 24-04-2020</p>
                         </li>
                         <li>
-                            [7] SoftLogica, “WAPT 10: Performance testing tool for web and mobile applications”, 
-                            [  <a href="https://www.loadtestingtool.com/product.shtml">https://www.loadtestingtool.com/product.shtml</a> ], последно посетен на 08-04-2020
+                            <p>[7] SoftLogica, “WAPT 10: Performance testing tool for web and mobile applications”,</p>
+                            <p>[ <a href="https://www.loadtestingtool.com/product.shtml">https://www.loadtestingtool.com/product.shtml</a> ],</p>
+                            <p> последно посетен на 24-04-2020</p>
                         </li>
                         <li>
-                            [8] SoftLogica, “WAPT Pro 5: Scalable performance testing solution”, 
-                            [  <a href="https://www.loadtestingtool.com/pro.shtml">https://www.loadtestingtool.com/pro.shtml</a> ], 
-                            последно посетен на 08-04-2020
+                            <p>[8] SoftLogica, “WAPT Pro 5: Scalable performance testing solution”,</p>
+                            <p>[ <a href="https://www.loadtestingtool.com/pro.shtml">https://www.loadtestingtool.com/pro.shtml</a> ],</p>
+                            <p>последно посетен на 24-04-2020</p>
                         </li>
                         <li>
-                            [9] SoftLogica, “WAPT Cloud: On-demand performance testing solution in the cloud”, 
-                            [  <a href="https://www.loadtestingtool.com/cloud-testing.shtml">https://www.loadtestingtool.com/cloud-testing.shtml</a> ], 
-                            последно посетен на 08-04-2020
+                            <p>[9] SoftLogica, “WAPT Cloud: On-demand performance testing solution in the cloud”,</p>
+                            <p>[ <a href="https://www.loadtestingtool.com/cloud-testing.shtml">https://www.loadtestingtool.com/cloud-testing.shtml</a> ],</p>
+                            <p>последно посетен на 24-04-2020</p>
                         </li>
                     </ul>
                 </article>
-                <h3>Фигури</h3>
                 <article>
+                    <h3 id="anchor-citations-figures">Фигури</h3>
                     <ul>
                         <li>
-                            Guru99 Tech Pvt Ltd, “How to Use JMeter for Performance & Load Testing”, 
-                            [  <a href="https://www.guru99.com/jmeter-performance-testing.html">https://www.guru99.com/jmeter-performance-testing.html</a> ], 
-                            използван за Фиг. 1
+                            <p>Guru99 Tech Pvt Ltd, “How to Use JMeter for Performance & Load Testing”,</p>
+                            <p> [  <a href="https://www.guru99.com/jmeter-performance-testing.html">https://www.guru99.com/jmeter-performance-testing.html</a> ],</p>
+                            <p>използван за Фиг. 1</p>
                         </li>
                         <li>
-                            Яна Густи, “TOP 20 tools for load testing in 2018”, 
-                            публикувано на 08-05-2017,
-                            [ <a href="https://geteasyqa.com/blog/best-tools-load-testing/">https://geteasyqa.com/blog/best-tools-load-testing/</a> ], 
-                            използван за Фиг. 3
+                            <p>Яна Густи, “TOP 20 tools for load testing in 2018”, публикувано на 08-05-2017,</p>
+                            <p> [ <a href="https://geteasyqa.com/blog/best-tools-load-testing/">https://geteasyqa.com/blog/best-tools-load-testing/</a> ],</p>
+                            <p>използван за Фиг. 3</p>
                         </li>
                         <li>
-                            Anuraj, “Load testing Web API using Apache JMeter”, 
-                            публикувано на 05-09-2013
-                            [  <a href="https://dotnetthoughts.net/load-testing-web-api-using-apache-jmeter/">https://dotnetthoughts.net/load-testing-web-api-using-apache-jmeter/</a> ], 
-                            използван за Фиг. 4 и фиг. 5
+                            <p>Anuraj, “Load testing Web API using Apache JMeter”, публикувано на 05-09-2013</p>
+                            <p> [ <a href="https://dotnetthoughts.net/load-testing-web-api-using-apache-jmeter/">https://dotnetthoughts.net/load-testing-web-api-using-apache-jmeter/</a> ],</p>
+                            <p>използван за Фиг. 4 и фиг. 5</p>
                         </li>
                         <li>
-                            Apcelent, “Load Testing a Django Application using LocustIO”, 
-                            публикувано на 19-05-2017
-                            [  <a href="https://blog.apcelent.com/load-test-django-application-using-locustio.html">https://blog.apcelent.com/load-test-django-application-using-locustio.html</a> ], 
-                            използван за Фиг. 7, Фиг. 8 и Фиг. 9
+                            <p>Apcelent, “Load Testing a Django Application using LocustIO”,публикувано на 19-05-2017,</p>
+                            <p>[ <a href="https://blog.apcelent.com/load-test-django-application-using-locustio.html">https://blog.apcelent.com/load-test-django-application-using-locustio.html</a> ],</p>
+                            <p>използван за Фиг. 7, Фиг. 8 и Фиг. 9</p>
                         </li>
                         <li>
-                            Shasta Digital Technologies, “How to write SIMULATIONS using GATLING”, 
-                            публикувано на 30-12-2016
-                            [  <a href="http://shastadigitaltechnologies.blogspot.com/search?updated-max=2016-12-30T16:15:00%2B05:30&max-results=20&start=4&by-date=false">http://shastadigitaltechnologies.blogspot.com/search?updated-max=2016-12-30T16:15:00%2B05:30&max-results=20&start=4&by-date=false</a> ], 
-                            използван за Фиг. 11
+                            <p>Shasta Digital Technologies, “How to write SIMULATIONS using GATLING”, публикувано на 30-12-2016,</p>
+                            <p>[ <a href="http://shastadigitaltechnologies.blogspot.com/search?updated-max=2016-12-30T16:15:00%2B05:30&max-results=20&start=4&by-date=false">http://shastadigitaltechnologies.blogspot.com/search?updated-max=2016-12-30T16:15:00%2B05:30&max-results=20&start=4&by-date=false</a> ],</p>
+                            <p>използван за Фиг. 11</p>
                         </li>
                         <li>
-                            Marko Stapfner, “Load Testing using Gatling.io 3.0 for Beginners”, 
-                            публикувано на 08-01-2019
-                            [  <a href="https://medium.com/@markostapfner/load-testing-using-gatling-io-3-0-for-beginners-75a9b3f93f62">https://medium.com/@markostapfner/load-testing-using-gatling-io-3-0-for-beginners-75a9b3f93f62</a> ], 
-                            използван за Фиг. 12
+                            <p>Марко Стапфнер, “Load Testing using Gatling.io 3.0 for Beginners”, публикувано на 08-01-2019</p>
+                            <p>[ <a href="https://medium.com/@markostapfner/load-testing-using-gatling-io-3-0-for-beginners-75a9b3f93f62">https://medium.com/@markostapfner/load-testing-using-gatling-io-3-0-for-beginners-75a9b3f93f62</a> ],</p>
+                            <p>използван за Фиг. 12</p>
                         </li>
                         <li>
-                            Gatling Corp, “Gatling - Load test as code”, 
-                            [  <a href="https://gatling.io/">https://gatling.io/</a> ], 
-                            използван за Фиг. 13
+                            <p>Gatling Corp, “Gatling - Load test as code”,</p>
+                            <p>[ <a href="https://gatling.io/">https://gatling.io/</a> ],</p>
+                            <p>използван за Фиг. 13</p>
                         </li>
                         <li>
-                            Neotys, “NeoLoad Features”,
-                            [  <a href="https://www.neotys.com/neoload/features">https://www.neotys.com/neoload/features</a> ], 
-                            използван за Фиг. 15, Фиг. 16 и Фиг. 17
+                            <p>Neotys, “NeoLoad Features”,</p>
+                            <p>[ <a href="https://www.neotys.com/neoload/features">https://www.neotys.com/neoload/features</a> ],</p>
+                            <p>използван за Фиг. 15, Фиг. 16 и Фиг. 17</p>
                         </li>
                         <li>
-                            Software Testing Help, “WebLOAD Review – Getting Started With WebLOAD Load Testing Toolr”, 
-                            публикувано на 10-11-2019
-                            [  <a href="https://www.softwaretestinghelp.com/webload-load-testing-tool-review/">https://www.softwaretestinghelp.com/webload-load-testing-tool-review/</a> ], 
-                            използван за Фиг. 19, Фиг. 20 и Фиг. 21
+                            <p>Software Testing Help, “WebLOAD Review – Getting Started With WebLOAD Load Testing Tool”, публикувано на 10-11-2019</p>
+                            <p>[ <a href="https://www.softwaretestinghelp.com/webload-load-testing-tool-review/">https://www.softwaretestinghelp.com/webload-load-testing-tool-review/</a> ],</p>
+                            <p>използван за Фиг. 19, Фиг. 20 и Фиг. 21</p>
                         </li>
                         <li>
-                            Kiran Byrappa, “How To Test The REST API Service With Rational Performance Tester”, 
-                            публикувано на 29-01-2018
-                            [  <a href="http://www.testworkbench-community.com/blogs/how-to-test-the-rest-api-service-with-rational-performance-tester">http://www.testworkbench-community.com/blogs/how-to-test-the-rest-api-service-with-rational-performance-tester</a> ], 
-                            използван за Фиг. 23, Фиг. 24 и Фиг. 25
+                            <p>Киран Бирапа, “How To Test The REST API Service With Rational Performance Tester”, публикувано на 29-01-2018,</p>
+                            <p>[ <a href="http://www.testworkbench-community.com/blogs/how-to-test-the-rest-api-service-with-rational-performance-tester">http://www.testworkbench-community.com/blogs/how-to-test-the-rest-api-service-with-rational-performance-tester</a> ],</p>
+                            <p>използван за Фиг. 23, Фиг. 24 и Фиг. 25</p>
                         </li>
                         <li>
-                            Micro Focus, “Silk Performer Help, Silk Performer Workbench 20.5, Getting Started, Tour Of The UI”,
-                            [  <a href="https://www.microfocus.com/documentation/silk-performer/205/en/silkperformer-205-webhelp-en/SILKPERF-043F6D15-TOUROFTHEUI-CON.html">https://www.microfocus.com/documentation/silk-performer/205/en/silkperformer-205-webhelp-en/SILKPERF-043F6D15-TOUROFTHEUI-CON.html</a> ], 
-                            използван за Фиг. 27
+                            <p>Micro Focus, “Silk Performer Help, Silk Performer Workbench 20.5, Getting Started, Tour Of The UI”,</p>
+                            <p>[ <a href="https://www.microfocus.com/documentation/silk-performer/205/en/silkperformer-205-webhelp-en/SILKPERF-043F6D15-TOUROFTHEUI-CON.html">https://www.microfocus.com/documentation/silk-performer/205/en/silkperformer-205-webhelp-en/SILKPERF-043F6D15-TOUROFTHEUI-CON.html</a> ],</p>
+                            <p>използван за Фиг. 27</p>
                         </li>
                         <li>
-                            davidko, “Creating Tests with Visual Studio”,
-                            публикувано на 11-01-2018
-                            [  <a href="https://community.microfocus.com/t5/Application-Delivery-Management/Creating-Tests-with-Visual-Studio/ba-p/1689228">https://community.microfocus.com/t5/Application-Delivery-Management/Creating-Tests-with-Visual-Studio/ba-p/1689228</a> ], 
-                            използван за Фиг. 28
+                            <p>davidko, “Creating Tests with Visual Studio”, публикувано на 11-01-2018,</p>
+                            <p>[ <a href="https://community.microfocus.com/t5/Application-Delivery-Management/Creating-Tests-with-Visual-Studio/ba-p/1689228">https://community.microfocus.com/t5/Application-Delivery-Management/Creating-Tests-with-Visual-Studio/ba-p/1689228</a> ],</p>
+                            <p>използван за Фиг. 28</p>
                         </li>
                         <li>
-                            Micro Focus, “Powerful, Realistic Load and Stress Testing”,
-                            [  <a href="https://www.microfocus.com/en-us/products/silk-performer/overview">https://www.microfocus.com/en-us/products/silk-performer/overview</a> ], 
-                            използван за Фиг. 29
+                            <p>Micro Focus, “Powerful, Realistic Load and Stress Testing”,</p>
+                            <p>[ <a href="https://www.microfocus.com/en-us/products/silk-performer/overview">https://www.microfocus.com/en-us/products/silk-performer/overview</a> ],</p>
+                            <p>използван за Фиг. 29</p>
                         </li>
                         <li>
-                            Orasi Software, “Cloud Load Testing: Micro Focus LoadRunner Cloud”,
-                            [  <a href="https://www.orasi.com/continuous-testing/performance-testing/cloud-load-testing-micro-focus-loadrunner-cloud/">https://www.orasi.com/continuous-testing/performance-testing/cloud-load-testing-micro-focus-loadrunner-cloud/</a> ], 
-                            използван за Фиг. 31
+                            <p>Orasi Software, “Cloud Load Testing: Micro Focus LoadRunner Cloud”,</p>
+                            <p>[ <a href="https://www.orasi.com/continuous-testing/performance-testing/cloud-load-testing-micro-focus-loadrunner-cloud/">https://www.orasi.com/continuous-testing/performance-testing/cloud-load-testing-micro-focus-loadrunner-cloud/</a> ],</p>
+                            <p>използван за Фиг. 31</p>
                         </li>
                         <li>
-                            Micro Focus, “LoadRunner Cloud”,
-                            [  <a href="https://www.microfocus.com/en-us/products/loadrunner-cloud/overview">https://www.microfocus.com/en-us/products/loadrunner-cloud/overview</a> ], 
-                            използван за Фиг. 32 и Фиг. 33
+                            <p>Micro Focus, “LoadRunner Cloud”,</p>
+                            <p>[ <a href="https://www.microfocus.com/en-us/products/loadrunner-cloud/overview">https://www.microfocus.com/en-us/products/loadrunner-cloud/overview</a> ],</p>
+                            <p>използван за Фиг. 32 и Фиг. 33</p>
                         </li>
                         <li>
-                            Web Design Dev, “WAPT – Web Application Load, Stress and Performance Testing Review”,
-                            [  <a href="https://www.webdesigndev.com/wapt-web-application-load-stress-and-performance-testing-review/">https://www.webdesigndev.com/wapt-web-application-load-stress-and-performance-testing-review/</a> ], 
-                            използван за Фиг. 35 и Фиг. 36
+                            <p>Web Design Dev, “WAPT – Web Application Load, Stress and Performance Testing Review”,</p>
+                            <p>[ <a href="https://www.webdesigndev.com/wapt-web-application-load-stress-and-performance-testing-review/">https://www.webdesigndev.com/wapt-web-application-load-stress-and-performance-testing-review/</a> ],</p>
+                            <p>използван за Фиг. 35 и Фиг. 36</p>
                         </li>
                         <li>
-                            Software Testing Help, “The Beginner’s Guide To Web Application Performance Testing Using WAPT Pro”,
-                            [  <a href="https://www.softwaretestinghelp.com/wapt-pro-load-test-tool-review/">https://www.softwaretestinghelp.com/wapt-pro-load-test-tool-review/</a> ], 
-                            използван за Фиг. 37
+                            <p>Software Testing Help, “The Beginner’s Guide To Web Application Performance Testing Using WAPT Pro”,</p>
+                            <p>[ <a href="https://www.softwaretestinghelp.com/wapt-pro-load-test-tool-review/">https://www.softwaretestinghelp.com/wapt-pro-load-test-tool-review/</a> ],</p>
+                            <p> използван за Фиг. 37</p>
                         </li>
                     </ul>
                 </article>
@@ -805,7 +846,7 @@
                 <h2 class="heading" id="anchor-figures">Списък с фигури</h2>
                 <article>
                     <ul>
-                        <li><a href="#image-testing">Фигура 1. Тестване на натовареност</a> </li>
+                        <li><a href="#image-testing">Фигура 1. Тестване на натовареност</a></li>
     
                         <li><a href="#image-jmeter-1">Фигура 2. Лого на JMeter</a></li>
                         <li><a href="#image-jmeter-2">Фигура 3. Процес на тестване в JMeter</a></li>
@@ -817,7 +858,7 @@
                         <li><a href="#image-locust-3">Фигура 8. Изпълнение на тест и отчитане на брой грешки в Locust</a></li>
                         <li><a href="#image-locust-4">Фигура 9. Информация за настъпили грешки по време на тестване в Locust</a></li>
     
-                        <li><a href="#image-gatling-1">Фигура 10. Лого на Gatling</a> </li>
+                        <li><a href="#image-gatling-1">Фигура 10. Лого на Gatling</a></li>
                         <li><a href="#image-gatling-2">Фигура 11. Конфигурация на протоколи в Gatling</a></li>
                         <li><a href="#image-gatling-3">Фигура 12. Отчет от тестване в Gatling</a></li>
                         <li><a href="#image-gatling-4">Фигура 13. Статистика на заявки и отговори в Gatling</a></li>
@@ -827,7 +868,7 @@
                         <li><a href="#image-neoload-3">Фигура 16. Създаване на облачна сесия в NeoLoad</a></li>
                         <li><a href="#image-neoload-4">Фигура 17. Валидация на тестови сценарии в NeoLoad</a></li>
     
-                        <li><a href="#image-webload-1">Фигура 18. Лого на WebLOAD</a> </li>
+                        <li><a href="#image-webload-1">Фигура 18. Лого на WebLOAD</a></li>
                         <li><a href="#image-webload-2">Фигура 19. Начално табло на WebLOAD</a></li>
                         <li><a href="#image-webload-3">Фигура 20. Примерен тестов сценарий в WebLOAD</a></li>
                         <li><a href="#image-webload-4">Фигура 21. Отчет в WebLOAD</a></li>
@@ -847,7 +888,7 @@
                         <li><a href="#image-loadrunner-3">Фигура 32. Разпределение на натовареността в LoadRunner Cloud</a></li>
                         <li><a href="#image-loadrunner-4">Фигура 33. Резултат от тестване в LoadRunner Cloud</a></li>
     
-                        <li><a href="#image-wapt-1">Фигура 34. Лого на WAPT</a> </li>
+                        <li><a href="#image-wapt-1">Фигура 34. Лого на WAPT</a></li>
                         <li><a href="#image-wapt-2">Фигура 35. Конфигурация на тест в WAPT</a></li>
                         <li><a href="#image-wapt-3">Фигура 36. Разпределяне на виртуални потребители в WAPT</a></li>
                         <li><a href="#image-wapt-4">Фигура 37. Тестов резултат в WAPT</a></li>
